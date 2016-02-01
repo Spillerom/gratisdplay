@@ -1,10 +1,9 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
-    text-rendering: optimizeLegibility;
+    font-rendering: optimizeLegibility;
 }
 
 ::-moz-selection {
@@ -67,6 +66,10 @@ textarea {
 	background-size: cover;
 }
 
+.content, h1, form{
+	margin: 0 5.55555%;
+}
+
 .content{
 	text-align: center;
     position: fixed;
@@ -74,19 +77,16 @@ textarea {
     left: 0;
     bottom: 0;
     right: 0;
-    transform: translateY(-50%);
-    background: blue;
-/*     width: 30em; */
+    transform: translateY(-60%);
 }
 
 h1{
 	text-align: center;
 	margin: 0 auto;
 	color: #fff;
-	background: aqua;
+	margin: 2em 0;
+	font-weight: 400;
 }
-
-
 
 /* ------- FORM --------*/
 
@@ -95,39 +95,30 @@ label {
     margin-top:20px;
     font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
 	font-weight: 400;
+	color: #fff;
 }
 
-/* Centre the page */
-.body {
-    display:block;
-    margin:0 auto;
-    width:576px;
-    background-color: green;
-}
-
-/* Centre the form within the page */
+/* Centers the form within the page */
 form {
-    margin:0 auto;
-    width:459px;
+    margin: 0 auto;
+    width:31.250em;
 }
 
-/* Style the text boxes */
-
+/* Styles text boxes */
 input, textarea {
-    width:439px;
-    height:27px;
-    background:#e4ebe7;
-    border:1px solid #b4b4b4;
+    width:31em;
+    height:1.688em;
+    background:#fff;
+    border:1px solid #fff;
     padding:10px;
-    margin-top:20px;
+    margin-top:1.5em;
     font-size:1em;
-    color:#000;
+    color:#808080;
     border-radius:2px;
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
-    
-    font-family:"freight-sans-pro","Helvetica Neue", Helvetica, Arial,  sans-serif;
-	font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
+	font-weight: 400;
 	
 }
 
@@ -135,7 +126,7 @@ textarea {
 	height:213px;
 	font-family:"freight-sans-pro","Helvetica Neue", Helvetica, Arial,  sans-serif;
 	font-weight: 500;
-	color: #000;
+	color: #808080;
 }
 
 :-webkit-input-placeholder {
@@ -149,18 +140,20 @@ textarea {
 }
 
 input:focus, textarea:focus {
-    border:1px solid #fd1026;
+    border:1px solid #74bfc1;
     outline:0px none transparent;
 }
 
 #submit {
-    width:127px;
-    height:38px;
-    background:url(btn_submit.png);
-    text-indent:-9999px;
-    border:none;
-    margin-top:20px;
-    cursor:pointer;
+    width: 10em;
+    height: 3.5em;
+    color: #fff;
+    border: none;
+    margin-top: 1.3em;
+    cursor: pointer;
+    background: #74bfc1;
+    border-radius: 1.875em;
+	text-transform: uppercase;
 }
 
 	#submit:hover {
@@ -169,16 +162,12 @@ input:focus, textarea:focus {
 
 
 
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
+	
 }
 
 @media print,
