@@ -1,0 +1,79 @@
+body{
+	font-family:'Akkurat', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
+}
+
+.bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../images/2560x1440_tilesbg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.text-centered{
+	text-align: center;
+}
+
+h1, p{
+	font-family:'AkkuratLight', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
+	color: #fff;
+	font-weight: 100;
+}
+
+.lead{
+	margin-top: 60px;	
+}
+
+input, textarea, select{
+	font-family:'AkkuratLight', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
+}
+
+
+.dropdown{
+	margin-top: 18px;
+}
+
+.centerbtn{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.btn-hg{
+	padding: 16px 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.form-contain{
+	margin-top: 100px;
+}
+
+.form-control {
+    border: 2px solid #fff;
+    padding: 26px 12px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px){...}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px){ ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px){ {
+		
+}
+
+
+
+
+
+

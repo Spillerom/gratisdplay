@@ -7,12 +7,12 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #74bfc1;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #74bfc1;
     text-shadow: none;
 }
 
@@ -66,8 +66,11 @@ textarea {
 	background-size: cover;
 }
 
-.content, h1, form{
-	margin: 0 5.55555%;
+.wrapper{
+	padding: 0 0.75em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .content{
@@ -80,6 +83,17 @@ textarea {
     transform: translateY(-60%);
 }
 
+.formcontainer{
+/* 	float: left; */
+	width: 100%;
+	background: blue;
+}
+
+.centerbtn{
+	width: 100%;
+	display: inline-block;
+}
+
 h1{
 	text-align: center;
 	margin: 0 auto;
@@ -90,57 +104,48 @@ h1{
 
 /* ------- FORM --------*/
 
-label {
-    display:block;
-    margin-top:20px;
-    font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
-	font-weight: 400;
-	color: #fff;
-}
-
-/* Centers the form within the page */
 form {
-    margin: 0 auto;
-    width:31.250em;
+	margin: 0;
+	padding: 0;
 }
 
 /* Styles text boxes */
+
 input, textarea {
-    width:31em;
+    font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
+	width: 90%;
     height:1.688em;
     background:#fff;
-    border:1px solid #fff;
-    padding:10px;
+    border:4px solid #fff;
+    padding:0.8em;
     margin-top:1.5em;
     font-size:1em;
-    color:#808080;
     border-radius:2px;
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
-    font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
 	font-weight: 400;
-	
+	-webkit-transition: border .2s ease;
 }
 
-textarea {
-	height:213px;
-	font-family:"freight-sans-pro","Helvetica Neue", Helvetica, Arial,  sans-serif;
-	font-weight: 500;
-	color: #808080;
+select{
+	font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
 }
 
 :-webkit-input-placeholder {
-    color:   #000;
+    color:   red;
+    background: fuchsia;
 }
 :-moz-placeholder {
-    color:    #000;
+    color:    red;
+    background: fuchsia;
 }
 :-ms-input-placeholder {
-        color:    #000;
+        color:    red;
+        background: fuchsia;
 }
 
 input:focus, textarea:focus {
-    border:1px solid #74bfc1;
+    border:4px solid #74bfc1;
     outline:0px none transparent;
 }
 
@@ -148,17 +153,18 @@ input:focus, textarea:focus {
     width: 10em;
     height: 3.5em;
     color: #fff;
+    background: #6eb2bd;
     border: none;
-    margin-top: 1.3em;
+    margin-top: 3em;
     cursor: pointer;
-    background: #74bfc1;
     border-radius: 1.875em;
 	text-transform: uppercase;
 }
 
 	#submit:hover {
-	    opacity:0.8;
+	    background: #4b909b;
 	}
+
 
 
 
@@ -168,13 +174,6 @@ input:focus, textarea:focus {
 
 @media only screen and (min-width: 35em) {
 	
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
 }
 
 /* ==========================================================================

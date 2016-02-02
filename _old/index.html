@@ -16,31 +16,53 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
+    <body role="application">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
          <div class="bg">
-            <div class="content">
+            <div class="content wrapper">
                 <h1>Tobben snekrer tekst adipiscing elit. Nulla faucibus porttitor pulvinar. Vestibulum mollis placerat mi. Aliquam interdum massa at hendrerit 
 	             </h1>
-				 <form method="post" action="index.php">
-        
-	<!--     		<label>Name</label> -->
-	    			<input name="name" placeholder="Skriv inn fornavnet ditt her">
-	    			
-	    			<input name="name" placeholder="Og etternavnet ditt her">
-	            
-	    			<input name="email" type="email" placeholder="Epostadressen din">
-	            	    		
-					<label>*What is 2+2? (Anti-spam)</label>
-					<input name="human" placeholder="Answer here">
-	            
-					<input id="submit" name="submit" type="submit" value="Submit">
-        
-        		</form>
-        		
+
+				 <div class="formcontainer wrapper">
+					 <label for="gratis dplay abonnement">Fyll ut under:</label>
+					 
+					 <form method="post" action="#">
+	        
+		    			<input name="name" type="name" placeholder="Skriv inn fornavnet ditt her">
+		    			
+		    			<input name="lastname" placeholder="Og etternavnet ditt her">
+		            
+		    			<input name="email" type="email" placeholder="Epostadressen din">
+		    			
+		    					    			
+		    			<select name="Kjønn" id="gender">
+						 	
+						 	<option class="male" value="male">Mann</option>
+						 	<option class="female" value="female">Kvinne</option>
+						 	
+	        			</select>
+	        			
+	        			<a href="#" class="custom-select" id="gender-button">Velg kjønn</a>
+	        			
+	        			<ul class="custom-select-menu custom-select-menu-hidden" id="gender-menu">
+		        			
+		        			<li><a href="#">Mann</a></li>
+		        			<li><a href="#">Kvinne</a></li>
+		        			
+	        			</ul>
+	        			
+	        			<input class="age" name="age" type="age" placeholder="Din alder">
+						
+						<div class="centerbtn">
+							<input id="submit" name="submit" type="submit" value="Submit">
+						</div>
+						
+	        		</form>
+        		</div>
+
             </div>
         </div>
 
