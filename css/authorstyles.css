@@ -4,8 +4,10 @@ body{
 
 .bg{
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	left: 0;
+	top: 0;
 	background: url(../images/2560x1440_tilesbg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -17,6 +19,11 @@ body{
 	text-align: center;
 }
 
+h1{
+	font-weight: normal;
+    font-style: normal;
+}
+
 h1, p{
 	font-family:'AkkuratLight', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
 	color: #fff;
@@ -24,13 +31,46 @@ h1, p{
 }
 
 .lead{
-	margin-top: 60px;	
+	font-size: 22px;
+	margin-top: 30px;	
+}
+
+.form-contain{
+	margin-top: 50px;
 }
 
 input, textarea, select{
 	font-family:'AkkuratLight', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
 }
 
+.form-control {
+    border: 2px solid #fff;
+    padding: 26px 12px;
+}
+
+/*
+.form-control::-moz-input-placeholder {
+  color: red !important;
+}
+ 
+.form-control::-webkit-input-placeholder {
+  color: red;
+}
+*/
+
+.form-control::-webkit-input-placeholder { color:red; }
+.form-group input[type="text"]::-moz-placeholder { color:red; }
+.form-group input[type="text"]:-moz-placeholder { color:red; }
+
+.form-control input[type="text"] {
+     color: blue;     
+}
+
+
+/* DROPDOWN BTN */
+.btn-default{
+	background: #ccc;
+}
 
 .dropdown{
 	margin-top: 18px;
@@ -43,34 +83,97 @@ input, textarea, select{
 }
 
 .btn-hg{
+	background: #6eb2bd;
+	color: #fff;
 	padding: 16px 40px;
     font-size: 16px;
     line-height: 1.5;
     border-radius: 30px;
     text-transform: uppercase;
     margin-top: 25px;
+    margin-bottom: 30px;
 }
 
-.form-contain{
-	margin-top: 100px;
+.btn-hg:hover{
+	background: #4d8e98;
 }
 
-.form-control {
-    border: 2px solid #fff;
-    padding: 26px 12px;
+.btn-hg:active, .btn-hg:focus {
+	position: relative;
+	top: 1px;
 }
-
 
 /* Small devices (tablets, 768px and up) */
-@media screen and (min-width: 768px){...}
+@media screen and (min-width: 768px){
+	
+	.lead{
+		font-size: 28px;
+		margin-top: 60px;
+	}
+	
+	.form-contain{
+		margin: 50px 100px 0 100px;
+		
+	}
+}
 
 /* Medium devices (desktops, 992px and up) */
-@media screen and (min-width: 992px){ ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px){ {
+@media screen and (min-width: 992px){ 
+	
+	.lead{
+		font-size: 31px;
+		margin-top: 60px;
+	}
+	
+	.form-contain{
+		margin: 50px 100px 0 100px;
 		
+	}
 }
+
+/* Desktops ( desktops, 1200px and up) */
+@media screen and (min-width: 1200px){ 	
+	
+	.lead{
+		font-size: 32px;
+		margin: 80px 40px 0 40px;
+	}
+	
+	.form-contain{
+		margin: 50px 200px 0px 200px;
+		
+	}
+
+}
+/* Large desktops ( desktops, 1600px and up) */
+@media screen and (min-width: 1600px){
+	
+	.lead{
+		font-size: 40px;
+		margin: 100px 60px 0 60px;
+	}
+	
+	.form-contain{
+		margin: 50px 230px 0px 230px;
+		
+	}
+	
+/* Super large desktops ( desktops, 1900px and up) */
+@media screen and (min-width: 1900px){
+	
+	.lead{
+		font-size: 40px;
+		margin: 200px 60px 0 60px;
+	}
+	
+	.form-contain{
+		margin: 50px 230px 0px 230px;
+		
+	}
+	
+	
+}	
+
 
 
 
