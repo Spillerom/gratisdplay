@@ -21,53 +21,63 @@
   </head>
   <body>
   	<section class="bg">  
-	    <div class="container content-vert-centered">
-	      	<h1 class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis metus et vehicula bibendum. Curabitur dignissim lectus non tortor pharetra, vitae hendrerit neque scelerisque.
-		     <h1>
-			 <div class="form-contain">     
-			      <form>
-				     	<div class="form-group">
-				     		<input type="text" id="name" class="form-control input-lg" placeholder="Fornavn" />
-				     	</div>
-					 	<div class="form-group">
-					 		<input type="text" id="lastname" class="form-control input-lg" placeholder="Etternavn" />
-				      	</div>
-					  	<div class="form-group">
-					  		<input type="text" id="email" class="form-control input-lg" placeholder="E-post adresse" />
-					  		<div class="dropdown">
-					  		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					  			Kjønn 
-					  			<span class="caret"></span>
-					  		</button>
-							
-							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							     <i class="dropdown-arrow"></i>
-							    <li><a href="#">Mann</a></li>
-							    <li><a href="#">Kvinne</a></li>
-							  </ul>
-							</div><!-- end dropdown -->
-				      	</div>
-				  
-						<div class="form-group">
-					  		<input type="text" id="age" class="form-control input-lg" placeholder="Alder" />
-				      	</div>
-				      	
-				      	<div class="centerbtn">
-					      	<button id="submit" class="btn btn-hg btn-primary text-centered">
-						  		Send inn		
-						  	</button>
-					  	</div>
-				   </form>
-				<div>   
-			      	
-	    </div>
-    <!-- /.container -->
+	    <div class="container">
+		    <div id="formmsg">
+		      	<h1 class="lead ">
+			      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis metus et vehicula bibendum. Curabitur dignissim lectus non tortor pharetra, vitae hendrerit neque scelerisque.
+			    </h1>
+			
+				<div class="form-contain">     
+				    <form>
+						     <div class="form-group">
+						     	<input type="text" id="name" class="form-control input-lg" placeholder="Fornavn" />
+						     </div>
+						 	
+						 	<div class="form-group">
+						 		<input type="text" id="lastname" class="form-control input-lg" placeholder="Etternavn" />
+					      	</div>
+						  	
+						  	<div class="form-group">
+						  		<input type="text" id="email" class="form-control input-lg" placeholder="E-post adresse" />
+						  		<select required>
+						  			<option value="" disabled selected hidden>Jeg er...</option>
+						  			<option value="0">Mann</option>
+						  			<option value="1">Kvinne</option>
+	    						</select>
+					      	</div>
+					      	
+	
+					  
+							<div class="form-group">
+						  		<input type="text" id="age" class="form-control input-lg" placeholder="Alder" />
+					      	</div>
+					      	
+					      	<div class="centerbtn">
+						      	<button id="submit" class="btn btn-primary btn-submit text-centered">
+							  		Send inn		
+							  	</button>
+						  	</div>
+					</form>
+				</div><!-- /.form-contain --> 
+			</div><!-- end formmsg -->
+			<div id="feedbackmsg">
+						<h1 class="lead">Takk, vi har motatt din kontakinformasjon. Kopiér koden under og bruk denne når du registrerer deg på Dplay. Det har også blitt sendt en epost til den adressen du oppga som inneholder koden, samt ,litt informasjon om Dplay.
+						</h1>
+						<p class="freemonth">
+							dsffg-kjehrwj23234-34534
+						</p>
+			</div><!-- end feedbackmsg -->		  
+      	
+		</div><!-- /.container -->
+		
     </section>
 
-
     <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
+<!--     <script src="js/jquery-1.8.3.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSRulePlugin.min.js"</script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
@@ -76,5 +86,12 @@
     <script src="js/flatui-radio.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>
+        <script>
+	        $("select").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
+        </script>
+		
+
+    
+    
   </body>
 </html>
